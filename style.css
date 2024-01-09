@@ -1,0 +1,74 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.pokemonDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+}
+
+.pokemonImg {
+    width: 150px;
+    height: 150px;
+}
+
+.pokemonName, .pokemonType {
+    font-size: 1.2rem;
+}
+
+#container {
+    display: grid;
+    grid-template-rows: repeat(5, 200px);
+    grid-template-columns: repeat(5, 200px);
+    grid-auto-rows: 200px;
+    grid-auto-columns: 200px;
+    gap: 20px;
+    height: 100vh; /* 100% of the viewport height */
+    width: 100vw;
+}
+
+.grass {
+    background: green;
+}
+
+.fire {
+    background-color: orangered;
+}
+
+.water {
+    background-color: aqua;
+}
+
+.normal {
+    background-color: gray;
+}
+
+.bug {
+    background-color: greenyellow;
+}
+
+.poison {
+    background-color: purple;
+}
+
+.electric {
+    background-color: yellow;
+}
+
+.ground {
+    background-color: brown;
+}
+
+.fairy {
+    background-color: palevioletred;
+}
+
+.fighting {
+    background-color: chocolate;
+}
