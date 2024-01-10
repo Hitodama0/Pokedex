@@ -2,20 +2,6 @@ const container = document.getElementById("container");
 const pokemonNameInput = document.getElementById("pokemonName");
 const searchButton = document.getElementById("search");
 
-
-async function searchPokemon(pokemonName) {
-    const url = `https://pokeapi.co/api/v2/pokemon/${pokemonName}`;
-    const response = await fetch(url);
-    if (!response.ok) {
-        throw new Error(`HTTP error! Status: ${response.status}`);
-    }
-    const pokemon = await response.json();
-    return pokemon;
-}
-
-
-
-
 async function fetchPokemonDetails(url) {
   const request = new Request(url);
 
